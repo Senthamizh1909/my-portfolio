@@ -1,0 +1,14 @@
+extends ../layout.pug
+
+block content 
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/portfolio') ← Back
+  article.grid-container.portfolio-intro.portfolio-project
+    .grid-x
+      .cell.small-12.medium-9.large-9
+        h1(style="text-align:center;")= "RazorPay"
+        p.lead.text-light(style="text-align:center;")= "Hi, there. To hire, Please pay here"
+        a.portfolio-link(style="justify-content:center;", href='/payment', target="_blank")
+          i.fas.fa-credit-card(style="justify-content:center;")
+          | PayNow
+      .cell.small-12.medium-9.large-9

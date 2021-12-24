@@ -1,0 +1,17 @@
+extends ../layout.pug
+
+block content 
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/portfolio') ← Back
+  article.grid-container.portfolio-intro.portfolio-project
+    .grid-x
+      .cell.small-12.medium-9.large-9
+        form(method="POST", action="/rabbitmq/queue")
+          span Enter the message: 
+          input(type="text" name="message")
+          input(type="submit")
+        br
+        form(method="GET", action="/rabbitmq/publish")
+          span Click here to send the queued message   
+          input(type="submit", placeholder="Send msg", name="Send msg")
+            

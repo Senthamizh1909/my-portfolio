@@ -1,0 +1,89 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "project_name": "Razor Pay",
+            "description": "It's the simple description of Razor Pay DEMO",
+            "technologies": [
+                "JavaScript",
+                "CSS",
+                "HTML"
+            ],
+            "live_link": "http://localhost:3000/razorpay",
+            "image_urls": [
+                "/static/img/razorpay-glyph.svg"
+            ]
+        },
+        {
+            "id": 2,
+            "project_name": "AES",
+            "description": "It's the simple description of AES DEMO",
+            "technologies": [
+                "JavaScript",
+                "CSS",
+                "HTML"
+            ],
+            "live_link": "http://localhost:3000/aes",
+            "image_urls": [
+                "/static/img/aes.jpg"
+            ]
+        },
+        {
+            "id": 3,
+            "project_name": "Three Func",
+            "description": "It's the simple description of Three function in ASYNC/AWAIT DEMO",
+            "technologies": [
+                "JavaScript",
+                "CSS",
+                "HTML"
+            ],
+            "live_link": "http://localhost:3000/threefunc",
+            "image_urls": [
+                "/static/img/async-await.jpg"
+            ]
+        },
+        {
+            "id": 4,
+            "project_name": "Mongo Joins",
+            "description": "It's the simple description of Mongo three collections join",
+            "technologies": [
+                "JavaScript",
+                "CSS",
+                "HTML",
+                "MongoDB"
+            ],
+            "live_link": "http://localhost:3000/mongo",
+            "image_urls": [
+                "/static/img/mongo.jpg"
+            ]
+        },
+        {
+            "id": 5,
+            "project_name": "RabbitMQ",
+            "description": "It's the simple description rabbitMQ and how it works",
+            "technologies": [
+                "JavaScript",
+                "CSS",
+                "HTML"
+            ],
+            "live_link": "http://localhost:3000/rabbitmq",
+            "image_urls": [
+                "/static/img/rabbitmq.jpg"
+            ]
+        },
+        {
+            "id": 6,
+            "project_name": "Callback Hell",
+            "description": "It's the simple description About Callback hell problem",
+            "technologies": [
+                "JavaScript",
+                "CSS",
+                "HTML"
+            ],
+            "live_link": "http://localhost:3000/callbackhell",
+            "image_urls": [
+                "/static/img/callback-hell.jpg"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+extends ../../layout.pug
+
+block content 
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/razorpay') ← Back
+  article.grid-container.portfolio-intro.portfolio-project
+    .grid-x
+      .cell.small-12.medium-9.large-9
+        div(class='d-flex justify-content-center')
+          form(action='/payment/order', method='POST')
+            div(class='mb-3')
+              label(for="amountInput", class="form-label")
+                | Enter Amount 
+              input(name="amount", type="number", min="1", class="form-control form-control-lg", id="amountInput", aria-describedby="amountHelp", required)
+              div(id="amountHelp", class="form-text")
+                | Please enter the correct amount
+            div(class="d-grid")
+              button(type="submit", class="btn btn-primary", id="getOrderIdBtn")
+                | Submit
+        

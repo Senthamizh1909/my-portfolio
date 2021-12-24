@@ -1,0 +1,17 @@
+extends ./layout.pug
+
+block content 
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/portfolio') ← Back
+  article.grid-container.portfolio-intro.portfolio-project
+    .grid-x
+      .cell.small-12.medium-9.large-9
+        .main.container
+            .row
+                .col-md-6.col-md-offset-3
+                    h1.display-4.m-b-2= title
+
+                    // sign in form
+                    div.form-group
+                    a.btn.btn-danger(href='/auth/google') Google
+                    

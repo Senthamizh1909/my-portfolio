@@ -1,0 +1,53 @@
+extends ../../layout.pug
+
+block content 
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/razorpay') ← Back
+  article.grid-container.portfolio-intro.portfolio-project
+    .grid-x
+      .cell.small-12.medium-9.large-9
+        div(class="row d-flex justify-content-center")
+            div(class="col-md-8")
+                div(class="card")
+                    h5(class="card-header")= "Payment Successful!"
+                    div(class="card-body")
+                        p(class="card-text")= "Thank you for contributing to us."
+                        dl(class="row mt-2")
+                            dt(class="col-sm-3") Order ID
+                            dd(class="col-sm-9", id="orderId") #{ paymentDetail.orderId }
+                                                
+                            dt(class="col-sm-3") Transaction ID
+                            dd(class="col-sm-9", id="orderId") #{ paymentDetail.paymentId }
+
+                            dt(class="col-sm-3") Signature
+                            dd(class="col-sm-9", id="orderId") #{ paymentDetail.signature }
+
+                            dt(class="col-sm-3") Amount
+                            dd(class="col-sm-9") #{ paymentDetail.amount/100 } Rs.
+
+                            dt(class="col-sm-3") Created at
+                            dd(class="col-sm-9") #{ paymentDetail.createdAt }
+
+                        a(href="/razorpay", type="button", class="btn btn-primary") Go Home
+        //- h1= data[id].project_name
+    //-     p.lead.text-light= "Hi, there. To hire Pay here"
+    //-     a.portfolio-link(href='/payment', target="_blank")
+    //-       i.fas.fa-globe-americas
+    //-       | PayNow
+    //-   .cell.portfolio-meta.small-12.medium-2.large-3
+    //-     h6 Technologies
+    //-     ul.list
+    //-       each val in data[id].technologies
+    //-         li= val
+    //-     a.portfolio-link(href=`${data[id].live_link}`, target="_blank") 
+    //-       i.fas.fa-globe-americas 
+    //-       | Live Demo
+    //-     a.portfolio-link(href=`${data[id].github_link}`, target="_blank") 
+    //-       i.fab.fa-github 
+    //-       | GitHub Repository
+    //-     a.portfolio-link(href=`${data[id].github_link}`, target="_blank") 
+    //-       i.fab.fa-github 
+    //-       | GitHub Repo
+    //- img.image(src=`${data[id].image_urls[1]}`)
+    //- img.image(src=`${data[id].image_urls[2]}`)
+    //- img.image(src=`${data[id].image_urls[3]}`)

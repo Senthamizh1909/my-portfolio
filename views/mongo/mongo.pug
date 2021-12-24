@@ -1,0 +1,38 @@
+extends ../layout.pug
+
+block content 
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/portfolio') ← Back
+  article.grid-container.portfolio-intro.portfolio-project
+    .grid-x
+      .cell.small-12.medium-9.large-9   
+        form(method="POST", action="/mongo/course")
+          div(class="row")
+            div(class="col") 
+              span Click Here to add course data
+            div(class="col")
+              input(type="submit")
+        br
+        form(method="POST", action="/mongo/student")
+          div(class="row")
+          div(class="col") 
+            span Click Here to add student data
+          div(class="col")
+            input(type="submit")
+        br
+        form(method="POST", action="/mongo/teacher")
+          div(class="row")
+            div(class="col") 
+              span Click Here to add teacher data
+            div(class="col")
+              input(type="submit")
+        br
+        form(method="GET", action="/mongo/joinCollections")
+          div(class="row")
+            div(class="col") 
+              span Click Here to get the three collections
+            div(class="col")
+              input(type="submit")
+        br
+        div
+            | #{threeCollection}

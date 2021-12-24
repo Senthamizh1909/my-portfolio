@@ -1,0 +1,12 @@
+extends ./layout.pug
+
+block content 
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/portfolio') ← Back
+  article.grid-container.portfolio-intro.portfolio-project
+    .grid-x
+      .cell.small-12.medium-9.large-9
+        h1= user.name
+        p Welcome to #{user.name}
+        a(href="/auth/logout") Logout
+        

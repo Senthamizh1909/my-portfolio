@@ -1,0 +1,362 @@
+/*****************************
+
+General
+
+*****************************/
+
+body {
+    font-size: 16px;
+    background: #f6f6f6;
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+h1 {
+    color: #777;
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2.5px;
+    -webkit-text-transform: uppercase;
+    text-transform: uppercase;
+    color: #666;
+}
+
+h6 {
+    letter-spacing: 1.5px;
+    -webkit-text-transform: uppercase;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #232332;
+    font-size: 1.3rem;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    color: #666;
+}
+
+.round {
+    border-radius: 5px;
+}
+
+.text-light {
+    color: #666;
+}
+
+a {
+    color: #666;
+    -webkit-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+a:hover {
+    color: #888888;
+}
+
+.image {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    border: solid 5px #fff;
+    border-radius: 0;
+    line-height: 0;
+    -webkit-box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.1);
+    box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.1);
+}
+
+.title-bar {
+    background: #777;
+}
+
+.title-bar-title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 50px;
+}
+
+
+/*****************************
+
+Sidebar
+
+*****************************/
+
+.portfolio-me {
+    padding: 20px;
+    background: #fff;
+    background: url('../images/desktop-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% 50%;
+    color: #fff;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.portfolio-me::before {
+    content: '';
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.portfolio-me img {
+    margin-bottom: 20px;
+    border: 5px solid rgba(246, 246, 246);
+    border-radius: 50%;
+}
+
+.portfolio-me h5 {
+    color: #333;
+}
+
+.portfolio-me p {
+    color: #626262;
+    font-size: 1rem;
+}
+
+.portfolio-me a {
+    font-family: 'Nunito', sans-serif;
+    color: #232323;
+    font-size: 0.813rem;
+    letter-spacing: 1px;
+    -webkit-text-transform: uppercase;
+    text-transform: uppercase;
+    -webkit-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+.portfolio-me a:hover,
+.portfolio-me a:active {
+    color: #888888;
+}
+
+hr {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+/*****************************
+
+Breadcrumb
+
+*****************************/
+
+.portfolio-breadcrumb {
+    margin: 0;
+    padding: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.portfolio-breadcrumb a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 0.813rem;
+    letter-spacing: 2.5px;
+    -webkit-text-transform: uppercase;
+    text-transform: uppercase;
+    color: #777;
+}
+
+
+/*****************************
+
+Portfolio
+
+*****************************/
+
+.portfolio-intro {
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.portfolio-heading {
+    background: #f6f6f6;
+    padding: 30px 20px;
+}
+
+.portfolio-index {
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.portfolio-index img {
+    margin-bottom: 1px;
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+}
+
+.portfolio-index a {
+    color: #222;
+}
+
+.portfolio-index .cell {
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    transition: .3s;
+}
+
+.portfolio-index .cell h5 {
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 1rem;
+    background: #fff none repeat scroll 0 0;
+    left: 0;
+    padding: 30px;
+    position: static;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.portfolio-project .portfolio-meta {
+    margin-bottom: 30px;
+}
+
+.portfolio-meta .button {
+    margin-bottom: 5px;
+}
+
+.portfolio-project p {
+    border: none;
+    padding-bottom: 0;
+    font-size: 1rem;
+}
+
+.portfolio-project li {
+    font-size: 1rem;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+.portfolio-bio {
+    line-height: 25px;
+}
+
+.list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.social {
+    list-style: none;
+    margin-left: 0;
+}
+
+.social li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social li a {
+    color: #555;
+    display: inline-block;
+    font-size: 14px;
+    height: 30px;
+    line-height: 27px;
+    text-align: center;
+    width: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #555;
+    border-image: initial;
+    border-radius: 100%;
+}
+
+.social li a:hover,
+.social li a:active {
+    background: #fff;
+    color: #555;
+}
+
+.portfolio-link {
+    display: block;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #777;
+    -webkit-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+.portfolio-link i {
+    padding-right: 10px;
+    font-size: 1.5rem;
+}
+
+.portfolio-link:hover,
+.portfolio-link:active {
+    color: #888888;
+}
+
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+  
+a {
+    color: #00B7FF;
+}
+
+.black-back {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.btn {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+}
+  
+
+/*****************************
+
+Media Queries
+
+*****************************/
+
+@media screen and (min-width: 768px) {
+    .portfolio-intro {
+        margin: 0;
+        padding: 40px 50px 30px;
+    }
+    .portfolio-meta {
+        padding-left: 20px;
+    }
+    .portfolio-heading {
+        padding: 30px 50px;
+    }
+    .portfolio-index {
+        padding: 10px 50px;
+    }
+}

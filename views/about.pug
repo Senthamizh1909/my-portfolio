@@ -1,0 +1,51 @@
+extends layout.pug
+
+block content 
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/portfolio') ← Back
+  article.grid-container.portfolio-intro.portfolio-project
+    .grid-x
+      .cell.small-12.medium-9.large-9
+        h1 Senthamizh Selvan Muthurangan
+        p.lead.text-light
+          | Full-stack Developer
+        .portfolio-bio
+            p
+              | I am a Back-end developer and Blockchain developer in Chennai, TN. I am passionate about JavaScript and building web applications.
+            p
+              | For the past 2 years, I have poured myself into learning new skills. Last year, I took up web development and have been obsessed ever since.
+            p
+              | I love the daily challenges of being a developer: writing quality code, learning new technologies, and solving complex problems. I learn quickly and test my knowledge by creating projects, pushing to GitHub.
+                        
+      .cell.portfolio-meta.small-12.medium-2.large-3
+        h6 Skills
+        ul.list
+          li JavaScript
+          li Express
+          li Reactjs
+          li Git
+          li HTML
+          li CSS
+          li Docker
+          li AWS
+          li Blockchain - Hyperledger Fabric
+        h6 Contact
+        ul.list
+          li
+            a(href='mailto:thamizhselvan700@gmail.com')
+              i.fa.fa-envelope-square &nbsp;thamizhselvan700@gmail.com
+          li
+            a(href='/static/media/thamizh-resume.pdf', target="_blank")
+              i.fa.fa-file-pdf &nbsp;Resume
+        ul.social
+          li
+            a(href='https://www.linkedin.com/in/senthamizh-selvan-muthurangan-196959170', target='_blank', aria-label="Linkedin")
+              i.fab.fa-linkedin-in
+          li
+            a(href='https://github.com/Senthamizh1909', target='_blank', aria-label="Github")
+              i.fab.fa-github
+          
+
+  nav.grid-container.portfolio-breadcrumb
+    a(href='/portfolio') ← Back
+  
